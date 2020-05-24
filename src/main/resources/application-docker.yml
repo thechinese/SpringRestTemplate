@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    consul:
+      host: ${CONSUL_HOST}
+      port: ${CONSUL_PORT}
+      discovery:
+        instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+        health-check-path: /actuator/health
+        prefer-ip-address: true
+        register-health-check: true
+        service-name: ${spring.application.name}
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
