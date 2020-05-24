@@ -23,7 +23,7 @@ public class TemplateRestController {
   TemplateService templateService;
 
   @ResponseStatus(HttpStatus.ACCEPTED)
-  @PostMapping(path = "/transformProject")
+  @PostMapping(path = "/helloTemplate")
   public void transform(String msg) {
 
     this.templateService.exampleMethod(msg);
