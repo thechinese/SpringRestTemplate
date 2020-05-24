@@ -60,11 +60,7 @@ dependencies {
   implementation "org.springframework.boot:spring-boot-starter-actuator"
   implementation "org.springframework.boot:spring-boot-starter-data-rest"
   implementation "org.springframework.boot:spring-boot-starter-web"
-  implementation "org.springframework.boot:spring-boot-starter-webflux"
-  implementation "org.springframework.cloud:spring-cloud-starter-consul-discovery"
-  implementation "org.springframework.cloud:spring-cloud-starter-netflix-ribbon"
-  implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
-  compileOnly "org.projectlombok:lombok"
+    compileOnly "org.projectlombok:lombok"
   testImplementation "org.springframework.boot:spring-boot-starter-test"
   testImplementation "io.projectreactor:reactor-test"
 }
